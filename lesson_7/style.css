@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {text-align: center;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.grid-container > div {
+  background-color: crimson;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+}
